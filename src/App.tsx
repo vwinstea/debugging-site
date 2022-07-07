@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./About/About";
 import "./App.css";
 import CommonBugs from "./CommonBugs/CommonBugs";
-import Console from "./Console/Console";
+import Console from "./DevTools/DevTools";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Testing from "./Testing/Testing";

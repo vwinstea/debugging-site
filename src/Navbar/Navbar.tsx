@@ -2,7 +2,6 @@ import { AppBar, colors, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const links = [
-  { to: "/", desc: "Debugging" },
   { to: "console", desc: "Console" },
   { to: "testing", desc: "Testing" },
   { to: "common-bugs", desc: "Common Bugs" },
@@ -21,6 +20,13 @@ function Navbar() {
         color: colors.blueGrey[50],
       }}
     >
+      <MenuItem
+        component={Link}
+        to="/"
+        sx={{ fontFamily: "Apple Chancery, cursive", fontSize: "22px" }}
+      >
+        Debugging the Web
+      </MenuItem>
       {links.map(({ to, desc }) => (
         <MenuItem component={Link} to={to}>
           {desc}

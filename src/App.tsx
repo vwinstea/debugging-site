@@ -1,3 +1,4 @@
+import { Box } from "@mui/system";
 import { Route, Routes } from "react-router-dom";
 import About from "./About/About";
 import "./App.css";
@@ -11,13 +12,15 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="console" element={<Console />} />
-        <Route path="testing" element={<Testing />} />
-        <Route path="common-bugs" element={<CommonBugs />} />
-        <Route path="about" element={<About />} />
-      </Routes>
+      <Box sx={{ paddingX: 5 }}>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="console" element={<Console />} />
+          <Route path="testing" element={<Testing />} />
+          <Route path="common-bugs" element={<CommonBugs />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </Box>
     </div>
   );
 }

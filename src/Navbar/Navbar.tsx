@@ -2,7 +2,7 @@ import { AppBar, colors, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const links = [
-  { to: "console", desc: "Console" },
+  { to: "dev-tools", desc: "Dev Tools" },
   { to: "testing", desc: "Testing" },
   { to: "common-bugs", desc: "Common Bugs" },
   { to: "about", desc: "About" },

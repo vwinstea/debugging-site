@@ -1,4 +1,5 @@
 import { Box, Link, Typography } from "@mui/material";
+import classNames from "classnames";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./DevTools.module.css";
 
@@ -38,16 +39,17 @@ function DevTools() {
         can now freely edit and change the content of. Try editing the text
         below to write your name to in the blank.
       </Typography>
-      <section
-        className={`
-        ${styles.editable} 
-        ${textEdited ? styles.complete : styles.incomplete}`}
+      <div
+        className={classNames(
+          styles.editable,
+          textEdited ? styles.complete : styles.incomplete
+        )}
         tabIndex={0}
         onKeyDown={handleEditText}
         role="textbox"
       >
         <p ref={editTextRef}>{initialText}</p>
-      </section>
+      </div>
       <Typography variant="caption">
         Note: Dev Tools are available on all major browsers including, Chrome,
         Firefox, Safari, and Edge. On some browsers, such as Safari, the dev

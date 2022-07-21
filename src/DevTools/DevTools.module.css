@@ -1,0 +1,13 @@
+.editable {
+  padding: 10px 5%;
+}
+
+.incomplete {
+  border: 1px solid black;
+}
+
+.complete {
+  border: 2px solid green;
+  border-radius: 10px;
+  background: darkseagreen;
+}

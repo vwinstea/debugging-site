@@ -1,0 +1,12 @@
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6 {
+  padding: 30px 0 10px;
+}
+
+.MuiTypography-h4 {
+  font-family: "Apple Chancery" !important;
+}

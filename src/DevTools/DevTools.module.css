@@ -1,5 +1,6 @@
 .editable {
   padding: 10px 5%;
+  margin: 20px 0;
 }
 
 .incomplete {
@@ -10,4 +11,28 @@
   border: 2px solid green;
   border-radius: 10px;
   background: darkseagreen;
+}
+
+.cardHeading {
+  padding-top: 0;
+  font-weight: bold !important;
+}
+
+.cardRow {
+  flex: 1;
+}
+
+.exampleDiv * {
+  color: yellow !important;
+}
+
+.exampleP {
+  color: green;
+  text-align: justify;
+  font-family: "Apple Chancery";
+  font-weight: bold;
+  font-size: 48px;
+  text-decoration: none;
+  text-align: center;
+  margin: 24 0;
 }

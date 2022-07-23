@@ -1,3 +1,4 @@
+import { CssBaseline } from "@mui/material";
 import { Box } from "@mui/system";
 import { Route, Routes } from "react-router-dom";
 import About from "./About/About";
@@ -11,6 +12,7 @@ import Testing from "./Testing/Testing";
 function App() {
   return (
     <div>
+      <CssBaseline />
       <Navbar />
       <Box sx={{ paddingX: 5 }}>
         <Routes>
